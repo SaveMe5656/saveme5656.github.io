@@ -7,12 +7,12 @@ let hydration;
 // setup
 async function setup() {
   // init water drinking sound
-  water.sound = createAudio("assets/bloxy-cola.mp3");
+  water.sound = createAudio("/assets/bloxy-cola.mp3");
 
   // init water drinking guy images
   water.image = {
-    idle: await loadImage("assets/waterd2.png"),
-    drink: await loadImage("assets/waterd33.png"),
+    idle: await loadImage("/assets/waterd2.png"),
+    drink: await loadImage("/assets/waterd33.png"),
   };
 
   // create the game canvas
