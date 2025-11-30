@@ -8,7 +8,7 @@ function loadCookie(name) {
 	let cookies = document.cookie.split("; ");
 	for (let i in cookies) {
 		let t = decodeURIComponent(cookies[i]);
-		if (t.substring(0, name.length + 1) == name + "=") return t(name.length + 1)
+		if (t.substring(0, name.length + 1) == name + "=") return t.substring(name.length + 1)
 	}
 }
 
