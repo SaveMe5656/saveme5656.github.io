@@ -224,9 +224,9 @@ In this subsection, you will copy some of GodMode9's files to internal memory so
 In this subsection, you will use a script to copy some of Luma3DS's files to internal memory so that they can be accessed, even without an SD card inserted.
 
 > [!WARNING]
-> If you set up GodMode9 to CTRNAND, DO NOT PROCEED PAST STEP 4! The following steps will overwrite GodMode9 from CTRNAND.
+> If you set up GodMode9 to CTRNAND, STOP! Some of following steps will overwrite GodMode9 from CTRNAND.
 >
-> Skip steps 4-7 rest of this section.
+> Skip steps 4-7 of this section.
 
 1. Select "Scripts..."
 1. Select "GM9Megascript"
