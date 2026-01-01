@@ -161,9 +161,6 @@ In this subsection, you will use FBI to install several useful homebrew applicat
 
 In this subsection, you will install several useful homebrew applications to HOME Menu.
 
-> [!NOTE]
-> If you don't plan on adding any programs or applications from Universal Updater, you can skip this section.
-
 > [!TIP]
 > Through Universal Updater, you can download install many different user-made programs and applications through your 3DS. This includes emulators, utilities, and games.
 >
@@ -171,6 +168,9 @@ In this subsection, you will install several useful homebrew applications to HOM
 
 > [!NOTE]
 > For the sake of this guide, you will just be installing any software that you didn't fetch in [What You Need: Section I - Manual Install](#section-i---manual-install).
+
+> [!NOTE]
+> If you don't plan on adding any programs or applications from Universal Updater, you can skip this section.
 
 1. Launch Universal Updater
    + If you added the 3DSX file, select Universal Updater from the list of homebrew
