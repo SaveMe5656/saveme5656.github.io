@@ -1,7 +1,7 @@
 # Finalizing Setup
 
 > [!IMPORTANT]
-> This is a modified version of an old version of the ["finalizing-setup"](https://github.com/hacks-guide/Guide_3DS/blob/8c2613d88bf35f5cd1a1efc8e969fef404c9a55b/_pages/en_US/finalizing-setup.txt) part of the **3DS Hacks Guide** (https://3ds.hacks.guide). You can the current version [here](https://3ds.hacks.guide/finalizing-setup).
+> This is a modified version of an old version of the ["finalizing-setup"](https://github.com/hacks-guide/Guide_3DS/blob/8c2613d88bf35f5cd1a1efc8e969fef404c9a55b/_pages/en_US/finalizing-setup.txt) part of the **3DS Hacks Guide** (https://3ds.hacks.guide). You can find the current version [here](https://3ds.hacks.guide/finalizing-setup).
 
 ## Required Reading
 
