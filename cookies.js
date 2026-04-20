@@ -1,18 +1,32 @@
-function saveCookie(name, value, duration, path) {
+function saveCookie(name, value, path, duration) {
+	if (value === undefined) {
+		console.error("Error: value parameter is undefined");
+		return;
+	}
 	let nameURI = encodeURIComponent(name),
 		valueURI = encodeURIComponent(value);
-	duration || (duration = 1), path || (path = "/"), document.cookie = nameURI + "=" + valueURI + ";expires=" + new Date(Date.now() + 2592e6 * duration).toUTCString() + ";path=" + path
+	let sentCookie = nameURI + "=" + valueURI;
+	duration === undefined || (sentCookie += ";expires=" + new Date(duration).toUTCString());
+	path === undefined || (sentCookie += ";path=" + path);
+	document.cookie = sentCookie;
+	return sentCookie;
 }
 
 function loadCookie(name) {
-	let cookies = document.cookie.split("; ");
-	for (let i in cookies) {
-		let t = decodeURIComponent(cookies[i]);
-		if (t.substring(0, name.length + 1) == name + "=") return t.substring(name.length + 1)
-	}
+	if (name !== undefined) {
+		let cookies = document.cookie.split("; ");
+		for (let i in cookies) {
+			if (cookies[i].substring(0, name.length + 1) == encodeURIComponent(name) + "=")
+				return decodeURIComponent(cookies[i].substring(name.length + 1));
+		}
+		console.warn("Warn: loaded cookie is undefined");
+	} else console.error("Error: name parameter is undefined");
 }
 
 function deleteCookie(name, path) {
-	let nameURI = encodeURIComponent(name);
-	path || (path = "/"), document.cookie = nameURI + "=;expires=" + new Date(Date.now() - 1).toUTCString() + ";path=" + path
+	if (name !== undefined) {
+		let deletedCookie = encodeURIComponent(name) + "=;expires=" + new Date(Date.now() - 1).toUTCString();
+		path === undefined || (deletedCookie += ";path=" + path);
+		document.cookie = deleteCookie;
+	} else console.error("Error: name parameter is undefined");
 }
