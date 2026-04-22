@@ -27,6 +27,6 @@ function deleteCookie(name, path) {
 	if (name !== undefined) {
 		let deletedCookie = encodeURIComponent(name) + "=;expires=" + new Date(Date.now() - 1).toUTCString();
 		path === undefined || (deletedCookie += ";path=" + path);
-		document.cookie = deleteCookie;
+		document.cookie = deletedCookie;
 	} else console.error("Error: name parameter is undefined");
 }
