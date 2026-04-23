@@ -1,9 +1,13 @@
-html {
+:root {
 	font-family: sans-serif;
 }
 
 .content-container {
 	padding: 8px;
+}
+
+.emoji {
+	height: 1em;
 }
 
 .icon {
