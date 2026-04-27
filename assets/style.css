@@ -1,0 +1,31 @@
+:root {
+	font-family: "Aller", Helvetica, sans-serif;
+}
+
+.content-container {
+	padding: 8px;
+}
+
+.emoji,
+.icon {
+	vertical-align: center;
+}
+
+.emoji {
+	height: 1em;
+}
+
+.icon {
+	height: calc(1em - 2px);
+	border: 1px solid black;
+	border-color: light-dark(black, white);
+}
+
+small,
+.small {
+	opacity: .75;
+}
+
+.small {
+	font-size: smaller;
+}
